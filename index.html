@@ -2,38 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenguajes de Programación</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
-<!-- DOCUMENTACION
- 1.Creacion de header con titulo y boton modo oscuro
- 2.Creacion de menu superior con enlaces a secciones como introduccion, lenguajes, aplicaciones y ventajas
- 3.Creacion de contenedor principal con tres secciones: menu izquierdo, contenido central y menu derecho
- 4.Menu izquierdo con lenguajes populares y sus iconos, implementacion de clases CSS para estilo
- 5.Contenido central con varias secciones describiendo lenguajes de programacion, tipos, aplicaciones, caracteristicas y ejemplos de uso
- 6.Menu derecho con datos importantes sobre lenguajes de programacion, implementacion de clases CSS para estilo
- 7.Creacion de footer con informacion del estudiante
-
- div se uso para agrupar elementos y aplicar estilos
- h para titulos y subtitulos
- class para definir estilos CSS reutilizables
- id para identificar secciones unicas y enlazables
- img para insertar imagenes representativas
- span para aplicar estilos a texto en linea
- p para parrafos de texto
- aside para menus laterales
- section para secciones de contenido principal
- main para contenedor principal del contenido
- ul y li para listas de elementos
- button para boton interactivo de modo oscuro
- sript para enlazar archivo JavaScript
- -->
 <body>
 
 <header class="header">
     <h1>Lenguajes de Programación</h1>
-    <button id="modoBtn">Modo oscuro</button>
+    <button id="modoBtn">🌙 Modo oscuro</button>
 </header>
 
 <nav class="menu-superior">
@@ -48,182 +26,179 @@
         <h3>Lenguajes populares</h3>
 
         <div class="item-lenguaje">
-            <img src="java.png">
+            <img src="imagenes/java.png" alt="Java">
             <span>Java</span>
         </div>
         <div class="item-lenguaje">
-            <img src="python.png">
+            <img src="imagenes/python.png" alt="Python">
             <span>Python</span>
         </div>
         <div class="item-lenguaje">
-            <img src="javascript.png">
+            <img src="imagenes/javascript.png" alt="JavaScript">
             <span>JavaScript</span>
         </div>
         <div class="item-lenguaje">
-            <img src="php.png">
+            <img src="imagenes/php.png" alt="PHP">
             <span>PHP</span>
         </div>
     </aside>
 
-<section id="lenguajes" class="bloque animar">
+    <section id="intro" class="contenido">
 
-<section id="concepto" class="bloque animar">
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h2>¿Qué es un lenguaje de programación?</h2>
-            <p>
-                Un lenguaje de programación es un conjunto de reglas y símbolos
-                que permiten a los programadores comunicarse con la computadora
-                para crear software, aplicaciones y sistemas.
-            </p>
-            <p>
-                Estos lenguajes permiten resolver problemas, automatizar tareas
-                y desarrollar soluciones tecnológicas.
-            </p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="lenguaje.jfif">
-        </div>
-    </div>
-</section>
-<section id="lenguajes" class="bloque animar">
+        <section id="concepto" class="bloque animar">
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h2>¿Qué es un lenguaje de programación?</h2>
+                    <p>
+                        Un lenguaje de programación es un conjunto de reglas y símbolos
+                        que permiten a los programadores comunicarse con la computadora
+                        para crear software, aplicaciones y sistemas.
+                    </p>
+                    <p>
+                        Estos lenguajes permiten resolver problemas, automatizar tareas
+                        y desarrollar soluciones tecnológicas.
+                    </p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/lenguaje.jfif" alt="Lenguaje de programación">
+                </div>
+            </div>
+        </section>
 
-    <h2>Lenguajes de Programación</h2>
+        <section id="lenguajes" class="bloque animar">
+            <h2>Lenguajes de Programación</h2>
 
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h3>Java</h3>
-            <p>Lenguaje orientado a objetos usado en sistemas empresariales y Android.</p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="java.png">
-        </div>
-    </div>
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h3>Java</h3>
+                    <p>Lenguaje orientado a objetos usado en sistemas empresariales y Android.</p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/java.png" alt="Java">
+                </div>
+            </div>
 
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h3>Python</h3>
-            <p>Lenguaje simple y potente usado en IA, ciencia de datos y automatización.</p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="python.png">
-        </div>
-    </div>
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h3>Python</h3>
+                    <p>Lenguaje simple y potente usado en IA, ciencia de datos y automatización.</p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/python.png" alt="Python">
+                </div>
+            </div>
 
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h3>JavaScript</h3>
-            <p>Lenguaje fundamental para crear páginas web interactivas.</p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="javascript.png">
-        </div>
-    </div>
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h3>JavaScript</h3>
+                    <p>Lenguaje fundamental para crear páginas web interactivas y dinámicas.</p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/javascript.png" alt="JavaScript">
+                </div>
+            </div>
 
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h3>PHP</h3>
-            <p>Lenguaje del lado del servidor para sistemas web.</p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="php.png">
-        </div>
-    </div>
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h3>PHP</h3>
+                    <p>Lenguaje del lado del servidor para sistemas web y bases de datos.</p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/php.png" alt="PHP">
+                </div>
+            </div>
+        </section>
 
-</section>
-<section id="tipos" class="bloque animar">
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h2>Tipos de Lenguajes</h2>
-            <ul>
-                <li>Lenguajes compilados</li>
-                <li>Lenguajes interpretados</li>
-                <li>Lenguajes de alto nivel</li>
-                <li>Lenguajes de bajo nivel</li>
-            </ul>
-        </div>
-        <div class="lenguaje-img">
-            <img src="tipos.png">
-        </div>
-    </div>
-</section>
-<section id="aplicaciones" class="bloque animar">
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h2>Aplicaciones</h2>
-            <p>
-                Los lenguajes de programación se usan en desarrollo web,
-                aplicaciones móviles, videojuegos, inteligencia artificial
-                y sistemas empresariales.
-            </p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="aplicaciones.jfif    ">
-        </div>
-    </div>
-</section>
-<section id="caracteristicas" class="bloque animar">
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h2>Características</h2>
-            <ul>
-                <li>Sintaxis definida</li>
-                <li>Reglas semánticas</li>
-                <li>Portabilidad</li>
-                <li>Facilidad de aprendizaje</li>
-            </ul>
-        </div>
-        <div class="lenguaje-img">
-            <img src="caracteristicas.jfif">
-        </div>
-    </div>
-</section>
-<section id="ejemplos" class="bloque animar">
-    <div class="lenguaje-fila">
-        <div class="lenguaje-texto">
-            <h2>Ejemplos de uso</h2>
-            <p>
-                Sistemas de gestión académica, páginas web, videojuegos,
-                aplicaciones bancarias y plataformas educativas.
-            </p>
-        </div>
-        <div class="lenguaje-img">
-            <img src="ejemplo.jfif">
-        </div>
-    </div>
-</section>
+        <section id="tipos" class="bloque animar">
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h2>Tipos de Lenguajes</h2>
+                    <ul>
+                        <li>Lenguajes compilados</li>
+                        <li>Lenguajes interpretados</li>
+                        <li>Lenguajes de alto nivel</li>
+                        <li>Lenguajes de bajo nivel</li>
+                    </ul>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/tipos.png" alt="Tipos de lenguajes">
+                </div>
+            </div>
+        </section>
 
+        <section id="aplicaciones" class="bloque animar">
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h2>Aplicaciones</h2>
+                    <p>
+                        Los lenguajes de programación se usan en desarrollo web,
+                        aplicaciones móviles, videojuegos, inteligencia artificial
+                        y sistemas empresariales.
+                    </p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/aplicaciones.jfif" alt="Aplicaciones de programación">
+                </div>
+            </div>
+        </section>
 
-</section>
+        <section id="caracteristicas" class="bloque animar">
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h2>Características</h2>
+                    <ul>
+                        <li>Sintaxis definida</li>
+                        <li>Reglas semánticas</li>
+                        <li>Portabilidad</li>
+                        <li>Facilidad de aprendizaje</li>
+                    </ul>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/caracteristicas.jfif" alt="Características">
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="bloque animar">
+            <div class="lenguaje-fila">
+                <div class="lenguaje-texto">
+                    <h2>Ejemplos de uso</h2>
+                    <p>
+                        Sistemas de gestión académica, páginas web, videojuegos,
+                        aplicaciones bancarias y plataformas educativas.
+                    </p>
+                </div>
+                <div class="lenguaje-img">
+                    <img src="imagenes/ejemplo.jfif" alt="Ejemplos de uso">
+                </div>
+            </div>
+        </section>
+
+    </section>
+
     <aside class="menu-derecho">
         <h3>Dato importante</h3>
-        <div class="bloque animar">
-             Los lenguajes de programación evolucionan constantemente,
-             adaptándose a las nuevas tecnologías y necesidades del mercado.
+        <div class="tarjeta-dato animar">
+            Los lenguajes de programación evolucionan constantemente, adaptándose a las nuevas tecnologías y necesidades del mercado.
         </div>
-        <div class="bloque animar">
-            Python es uno de los lenguajes de programación más populares
-            debido a su simplicidad y versatilidad, siendo ampliamente
-            utilizado en ciencia de datos, desarrollo web e inteligencia artificial.
+        <div class="tarjeta-dato animar">
+            Python es uno de los lenguajes de programación más populares debido a su simplicidad y versatilidad, siendo ampliamente utilizado en ciencia de datos e inteligencia artificial.
         </div>
-        <div class="bloque animar">
-            JavaScript es esencial para el desarrollo web, ya que permite
-            crear páginas interactivas y dinámicas, mejorando la experiencia
-            del usuario en la web.
+        <div class="tarjeta-dato animar">
+            JavaScript es esencial para el desarrollo web, ya que permite crear páginas interactivas y dinámicas, mejorando la experiencia del usuario.
         </div>
-        <div class="bloque animar">
-            Java es conocido por su portabilidad y robustez,
-            siendo utilizado en aplicaciones empresariales
-            y desarrollo de aplicaciones móviles para Android.
+        <div class="tarjeta-dato animar">
+            Java es conocido por su portabilidad y robustez, siendo utilizado en aplicaciones empresariales y desarrollo para Android.
         </div>
-        <div class="bloque animar">
-            PHP sigue siendo un lenguaje popular para el desarrollo
-            de sitios web y aplicaciones del lado del servidor,
-            especialmente en sistemas de gestión de contenido como WordPress.
+        <div class="tarjeta-dato animar">
+            PHP sigue siendo un lenguaje popular para el desarrollo de sitios web y aplicaciones del lado del servidor, como en WordPress.
         </div>
     </aside>
 
 </main>
+
+<!-- Botón flotante para regresar arriba -->
+<button id="btnArriba" title="Volver al inicio">⬆ Volver arriba</button>
 
 <footer class="footer">
     Bonilla-Gordillo-Olmedo-Palomo-Solis Grupo 1
