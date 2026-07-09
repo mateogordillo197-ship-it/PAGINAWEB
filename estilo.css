@@ -1,0 +1,314 @@
+/*
+DOCUMENTACION
+el asterisco (*) selecciona todos los elementos colocando:
+margin para margenes
+padding para relleno
+box-sizing para el modelo de caja
+font-family para la fuente de letra
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/*
+root para variables de colores
+blanco
+oscuro
+azul
+texto en negro
+*/
+
+:root{
+    --claro:#f4f6fa;
+    --oscuro:#121212;
+    --azul:#1e70c1;
+    --texto:#222;
+}
+
+/* BODY
+background color de fondo
+color color del texto
+transition para transiciones agradables
+
+body.oscuro para modo oscuro
+con background y color ajustados
+*/
+body{
+    background:var(--claro);
+    color:var(--texto);
+    transition:0.4s;
+}
+body.oscuro{
+    background:var(--oscuro);
+    color:#e0e0e0;
+}
+
+/* HEADER
+background color de fondo
+color color del texto
+padding relleno interno
+display flex para diseño flexible
+justify-content space-between para separar elementos
+*/
+.header{
+    background:var(--azul);
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* MENU
+.menu-superior para el menu de navegacion
+background color de fondo
+padding relleno interno
+text-align center para centrar texto
+
+.menu-superior a para enlaces del menu
+color color del texto
+margin margenes entre enlaces
+text-decoration none para quitar subrayado
+font-weight bold para texto en negrita
+
+.menu-superior a.activo para enlace activo
+text-decoration underline para subrayar enlace activo
+*/
+.menu-superior{
+    background:#4fa3ff;
+    padding:10px;
+    text-align:center;
+}
+.menu-superior a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.menu-superior a.activo{
+    text-decoration:underline;
+}
+
+/* CONTENEDOR
+display grid para diseño en cuadrícula
+grid-template-columns para definir columnas
+*/
+.contenedor{
+    display:grid;
+    grid-template-columns:20% 55% 25%;
+}
+
+/* LATERALES
+.menu-izquierdo y .menu-derecho para menús laterales
+padding relleno interno
+background color de fondo blanco
+
+.body.oscuro .menu-izquierdo y .menu-derecho para modo oscuro
+background color de fondo oscuro
+*/
+.menu-izquierdo,
+.menu-derecho{
+    padding:15px;
+    background:#dde9f8;
+}
+body.oscuro .menu-izquierdo,
+body.oscuro .menu-derecho{
+    background:#1e1e1e;
+}
+
+/* IZQUIERDA
+.item-lenguaje para cada elemento de lenguaje
+display flex para diseño flexible
+align-items center para centrar elementos verticalmente
+gap espacio entre elementos
+margin-bottom margen inferior
+
+.item-lenguaje img para imagenes dentro de item-lenguaje
+width para ancho de imagen
+*/
+.item-lenguaje{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+.item-lenguaje img{
+    width:30px;
+}
+
+/* CENTRO
+.contenido para el contenedor de contenido principal
+padding relleno interno
+
+.bloque para bloques de contenido
+margin-bottom margen inferior
+
+.tarjeta para tarjetas de contenido
+background color de fondo blanco
+padding relleno interno
+margin margenes
+border-radius bordes redondeados
+transition para transiciones
+
+.tarjeta:hover para efecto hover en tarjetas
+transform scale para agrandar tarjeta en hover
+
+body.oscuro .tarjeta para modo oscuro
+background color de fondo oscuro
+*/
+.contenido{
+    padding:20px;
+}
+.bloque{
+    margin-bottom:30px;
+}
+.tarjeta{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:6px;
+    transition:0.3s;
+}
+.tarjeta:hover{
+    transform:scale(1.03);
+}
+body.oscuro .tarjeta{
+    background:#2a2a2a;
+}
+
+/* ANIMACIONES
+
+.animar para elementos a animar
+opacity opacidad inicial
+transform translateY para desplazamiento vertical inicial
+transition para transicion suave
+
+.animar.visible para estado visible
+opacity opacidad final
+transform translateY para posicion final
+*/
+.animar{
+    opacity:0;
+    transform:translateY(30px);
+    transition:0.8s;
+}
+.animar.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* FOOTER 
+.footer para el pie de página
+background color de fondo
+color color del texto
+text-align center para centrar texto
+padding relleno interno
+*/
+.footer{
+    background:var(--azul);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+/*LENGUAJES
+.lenguaje-fila para cada fila de lenguaje
+display flex para diseño flexible
+align-items center para centrar elementos verticalmente
+justify-content space-between para separar elementos
+background color de fondo blanco
+padding relleno interno
+margin-bottom margen inferior
+border-radius bordes redondeados
+gap espacio entre elementos
+transition para transiciones
+
+.lenguaje-fila:hover para efecto hover en fila
+transform scale para agrandar fila en hover
+
+.lenguaje-texto para el contenedor de texto
+width para ancho del contenedor
+
+.lenguaje-texto h3 para el título del lenguaje
+color color del texto
+margin-bottom margen inferior
+
+.lenguaje-img para el contenedor de imagen
+width para ancho del contenedor
+text-align center para centrar imagen
+
+.lenguaje-img img para la imagen del lenguaje
+width para ancho de la imagen
+*/
+.lenguaje-fila{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:8px;
+    gap:20px;
+    transition:0.4s;
+}
+
+.lenguaje-fila:hover{
+    transform:scale(1.02);
+}
+
+.lenguaje-texto{
+    width:65%;
+}
+
+.lenguaje-texto h3{
+    color:#1e70c1;
+    margin-bottom:8px;
+}
+
+.lenguaje-img{
+    width:35%;
+    text-align:center;
+}
+
+.lenguaje-img img{
+    width:120px;
+}
+
+/* MODO OSCURO
+body.oscuro .lenguaje-fila para modo oscuro
+background color de fondo oscuro
+
+body.oscuro .lenguaje-texto h3 para modo oscuro
+color color del texto azul claro
+
+.bloque para bloques de contenido
+margin-bottom margen inferior
+
+.menu a:hover para efecto hover en enlaces del menu
+color amarillo
+
+body.oscuro p,
+body.oscuro li,
+body.oscuro h2 para modo oscuro
+color del texto blanco
+*/
+body.oscuro .lenguaje-fila{
+    background:#1f1f1f;
+}
+body.oscuro .lenguaje-texto h3{
+    color:#6bb6ff;
+}
+.bloque{
+    margin-bottom:40px;
+}
+
+.menu a:hover{
+    color:yellow;
+}
+
+body.oscuro p,
+body.oscuro li,
+body.oscuro h2{
+    color:#eaeaea;
+}
