@@ -18,9 +18,9 @@ modoBtn.addEventListener("click", () => {
     
     // Cambia el icono y texto del botón según el modo
     if(document.body.classList.contains("oscuro")){
-        modoBtn.innerHTML = "☀️ Modo claro";
+        modoBtn.innerHTML = "Modo claro";
     } else {
-        modoBtn.innerHTML = "🌙 Modo oscuro";
+        modoBtn.innerHTML = "Modo oscuro";
     }
 });
 
